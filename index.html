@@ -4,9 +4,160 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Responsive Home Web</title>
-    <link rel="stylesheet" href="public/css/style.css" />
+    <link rel="stylesheet" href="public/css/final.css" />
   </head>
-  <body>
-    <h1>Responsive Home Web</h1>
+  <body class="flex min-h-screen">
+    <main class="px-5 sm:px-10 md:px-16 lg:px-20 py-5 m-auto">
+      <!-- Hero Section -->
+      <section class="relative lg:hidden" id="hero">
+        <div class="flex gap-x-4 justify-between">
+          <img
+            src="public/img/house-1.jpg"
+            alt="house-1"
+            class="rounded-lg h-64 sm:h-52 object-cover object-center brightness-[0.55] w-full sm:w-1/2 md:w-6/12"
+          />
+          <img
+            src="public/img/house-2.jpg"
+            alt="house-2"
+            class="rounded-lg h-64 sm:h-52 object-cover object-center brightness-[0.55] hidden sm:block sm:w-1/2 md:w-3/12"
+          />
+          <img
+            src="public/img/house-3.jpg"
+            alt="house-3"
+            class="rounded-lg h-64 sm:h-52 object-cover object-center brightness-[0.55] w-64 hidden sm:hidden md:block md:w-3/12"
+          />
+        </div>
+        <div
+          class="absolute bottom-0 left-0 p-3 text-white flex flex-col sm:hidden"
+        >
+          <span class="font-semibold">Entire House</span>
+          <span class="font-bold text-lg">Beach House in Collingwood</span>
+        </div>
+      </section>
+      <!-- End of Hero Section -->
+
+      <!-- Icon Section -->
+      <section class="mt-4 flex justify-between lg:hidden" id="icon">
+        <div class="flex flex-col">
+          <div class="hidden sm:block">
+            <div class="pb-2 flex flex-col">
+              <span class="font-semibold text-slate-500">Entire House</span>
+              <span class="font-semibold text-lg md:text-xl"
+                >Beach House in Collingwood</span
+              >
+            </div>
+          </div>
+          <div class="flex">
+            <div class="flex items-center gap-x-1.5 font-semibold">
+              <img src="public/img/star.png" alt="rating-img" class="h-4" />
+              <span class="text-violet-700 text-sm">4.89</span>
+              <span class="text-violet-700 text-sm">(128)</span>
+            </div>
+            <div class="ml-5 flex items-center gap-x-1.5">
+              <img
+                src="public/img/location.png"
+                alt="location-img"
+                class="h-4"
+              />
+              <span class="text-sm text-slate-600 font-semibold"
+                >Collingwood, Ontario</span
+              >
+            </div>
+          </div>
+        </div>
+        <div class="">
+          <a
+            href="#"
+            class="font-semibold text-white px-4 py-2 bg-violet-700 hover:bg-violet-800 active:bg-violet-900 rounded-lg hidden sm:block duration-100"
+            >Check availability</a
+          >
+        </div>
+      </section>
+      <!-- End of Icon Section -->
+
+      <!-- Content Section -->
+      <section id="content" class="mt-7 lg:hidden">
+        <div>
+          <a
+            href="#"
+            class="font-semibold text-white px-4 py-2 bg-violet-700 hover:bg-violet-800 active:bg-violet-900 rounded-lg sm:hidden duration-100"
+            >Check availability</a
+          >
+          <p class="text-slate-500 mt-5">
+            This sunny and spacious room is for those traveling light and
+            looking for a comfy and cosy place to lay their head for a night or
+            two. This beach house sits in a vibrant neighborhood littered with
+            cafes, pubs, restaurants and supermarkets and is close to all the
+            major attractions such as Edinburgh Castle and Arthur's Seat.
+          </p>
+        </div>
+      </section>
+      <!-- End of Content Section -->
+
+      <!-- Large Content Section -->
+      <section id="large-content" class="hidden lg:flex lg:items-center">
+        <div class="w-1/2 pr-20">
+          <div class="pb-2 flex flex-col">
+            <span class="font-semibold text-slate-500">Entire House</span>
+            <span class="font-semibold text-2xl"
+              >Beach House in Collingwood</span
+            >
+          </div>
+          <div class="flex mt-1.5">
+            <div class="flex items-center gap-x-1.5 font-semibold">
+              <img src="public/img/star.png" alt="rating-img" class="h-4" />
+              <span class="text-violet-700 text-sm">4.89</span>
+              <span class="text-violet-700 text-sm">(128)</span>
+            </div>
+            <div class="ml-5 flex items-center gap-x-1.5">
+              <img
+                src="public/img/location.png"
+                alt="location-img"
+                class="h-4"
+              />
+              <span class="text-sm text-slate-600 font-semibold"
+                >Collingwood, Ontario</span
+              >
+            </div>
+          </div>
+          <div class="mt-8">
+            <a
+              href="#"
+              class="font-semibold text-white px-4 py-2 bg-violet-700 hover:bg-violet-800 active:bg-violet-900 rounded-lg duration-100"
+              >Check availability</a
+            >
+            <p class="text-slate-500 mt-5">
+              This sunny and spacious room is for those traveling light and
+              looking for a comfy and cosy place to lay their head for a night
+              or two. This beach house sits in a vibrant neighborhood littered
+              with cafes, pubs, restaurants and supermarkets and is close to all
+              the major attractions such as Edinburgh Castle and Arthur's Seat.
+            </p>
+          </div>
+        </div>
+        <div class="w-1/2 flex flex-col gap-y-3">
+          <div>
+            <img
+              src="public/img/house-1.jpg"
+              alt="house-1"
+              class="w-full h-56 object-cover object-center rounded-md"
+            />
+          </div>
+          <div class="flex justify-between gap-x-3">
+            <img
+              src="public/img/house-2.jpg"
+              alt="house-2"
+              class="h-40 object-cover object-center rounded-md w-1/2 gap-x-1"
+            />
+            <img
+              src="public/img/house-3.jpg"
+              alt="house-3"
+              class="h-40 object-cover object-center rounded-md w-1/2 gap-x-1"
+            />
+          </div>
+        </div>
+      </section>
+      <!-- End of Large Content Section -->
+    </main>
   </body>
 </html>
